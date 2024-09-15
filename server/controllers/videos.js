@@ -44,7 +44,7 @@ const getVideoStatistics = async (videoIds) => {
       params: {
         part: "statistics",
         id: videoIds.join(","),
-        key: "AIzaSyCAGUOuQi6MInQ6xo46UHC6hohJVnNssJE",
+        key: process.env.YOUTUBE_API_KEY,
       },
     }
   );
